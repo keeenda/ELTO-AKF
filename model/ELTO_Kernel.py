@@ -315,8 +315,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.linalg import svd, inv
-from torchvision import transforms
-import torch.nn.functional as F
 import sys, os
 from .deep_kernel import _rbf_kernel, _linear_kernel, _poly_kernel, _matern_kernel, _laplacian_kernel
 from sklearn import preprocessing
