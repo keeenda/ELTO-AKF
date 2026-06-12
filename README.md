@@ -2,9 +2,11 @@
 
 **Naichang Ke, Pongpisit Thanasutives, Yoshinobu Kawahara**
 
-*[Venue — to be updated]* | [OpenReview](https://openreview.net/forum?id=smFAyzvh5r&noteId=5vV5D4qJt7)
+*[Venue]* | [OpenReview](https://openreview.net/forum?id=smFAyzvh5r&noteId=5vV5D4qJt7)
 
-> **Abstract** — *To be updated.*
+> **Abstract** 
+
+Kalman filters based on the Embedded Latent Transfer Operators (ELTO) emerge as novel statistical tools for sequential state estimation. However, a critical limitation stems from their use of simplified noise models, which fail to dynamically adapt to non-stationary processes. To address this limitation, we introduce an ELTO-based Bayesian filtering approach with a new structured parameterization for the filter's noise model. This parameterization enables structured noise adaptation, which couples the data-driven learning of an optimal time-invariant noise model with dynamic parameter adaptation that responds to changes in dynamics within non-stationary processes. Empirical results show that our structured noise adaptation improves the filter's dynamic state estimation performance in noisy, time-varying environments.
 
 ---
 
@@ -13,7 +15,7 @@
 This repository contains the official implementation of **ELTO-AKF**, a framework for sequential Bayesian filtering that combines:
 
 - **ELTO** (Embedded Latent Transfer Operator): a kernel-based spectral learning method that extracts a latent state representation from observations via CCA-based stochastic realization.
-- **OAKF** (Online Adaptive Kalman Filter): a Kalman filter operating in the RKHS-embedded latent space, with structured noise covariance adaptation using a Block-wise Scalar (BWS) parameterization optimized by CMA-ES.
+- **AKF** (Adaptive Kalman Filter): a Kalman filter operating in the RKHS-embedded latent space, with structured noise covariance adaptation using a Block-wise Scalar (BWS) parameterization optimized by CMA-ES.
 
 ## Repository Structure
 
